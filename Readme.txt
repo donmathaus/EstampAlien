@@ -7,9 +7,7 @@ O projeto foi criado com foco em **design moderno, responsividade e usabilidade*
 
 ## 🌐 Demonstração
 
-🔗 **Site:** *(adicione o link quando estiver hospedado)*  
-📸 **Print do site:**  
-![Screenshot](assets/img/profile/logosite.jpg)
+🔗 **Site:** *https://donmathaus.github.io/EstampAlien/*  
 
 ---
 
@@ -89,7 +87,7 @@ EstampAlien/
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/usuario/estampalien.git
+   git clone https://github.com/donmathaus/estampalien.git
 ````
 
 2. **Acesse o diretório:**
