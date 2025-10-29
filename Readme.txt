@@ -7,7 +7,7 @@ O projeto foi criado com foco em **design moderno, responsividade e usabilidade*
 
 ## 🌐 Demonstração
 
-🔗 **Site:** *https://donmathaus.github.io/EstampAlien/*  
+🔗 **Site:** https://donmathaus.github.io/EstampAlien/  
 
 ---
 
