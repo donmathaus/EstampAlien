@@ -183,6 +183,7 @@ h6 {
   list-style: none;
   padding: 0 0 20px 0;
   margin: 0;
+  
 }
 
 .navmenu a,
@@ -1614,6 +1615,12 @@ section,
   transform: translateY(0);
 }
 
+.whatsbutton {
+  display: flex; 
+  width: 300px;
+  height: 100px;
+}
+  
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
