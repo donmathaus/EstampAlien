@@ -1,11 +1,3 @@
-/**
-* Template Name: SnapFolio
-* Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
-* Updated: Jul 21 2025 with Bootstrap v5.3.7
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -30,7 +22,6 @@
         headerToggle();
       }
     });
-
   });
 
   /**
@@ -65,6 +56,7 @@
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
   }
+
   scrollTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({
@@ -164,7 +156,6 @@
         }
       }, false);
     });
-
   });
 
   /**
@@ -223,7 +214,43 @@
       }
     })
   }
+
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  /**
+   * 🚀 Deep Linking (App + Fallback)
+   */
+  function isMobile() {
+    return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  }
+
+  let appOpening = false;
+
+  window.openApp = function(appLink, webLink) {
+    if (appOpening) return;
+    appOpening = true;
+
+    if (!isMobile()) {
+      window.location.href = webLink;
+      return;
+    }
+
+    const start = Date.now();
+
+    // tenta abrir o app
+    window.location.href = appLink;
+
+    // fallback
+    setTimeout(() => {
+      const end = Date.now();
+
+      if (end - start < 2000) {
+        window.location.href = webLink;
+      }
+
+      appOpening = false;
+    }, 1500);
+  };
 
 })();
